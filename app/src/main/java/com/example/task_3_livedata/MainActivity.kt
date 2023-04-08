@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity(), Navigator {
             if (savedInstanceState == null){
                 supportFragmentManager
                     .beginTransaction()
-                    .add(R.id.fragmentContainer, FirstFragment)
+                    .add(R.id.fragmentContainer, FirstFragment())
                     .commit()
             }
 

@@ -10,19 +10,19 @@ import com.example.task_3_livedata.databinding.FragmentFirstBinding
 
 class FirstFragment : Fragment() {
 
-    private lateinit var bindind: FragmentFirstBinding
+    private lateinit var binding: FragmentFirstBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        bindind = FragmentFirstBinding.inflate(inflater, container, false)
+        binding = FragmentFirstBinding.inflate(inflater, container, false)
 
-        bindind.textView1.text = "Hello"
-        bindind.button1.setOnClickListener {
+        binding.textView1.text = "Hello"
+        binding.button1.setOnClickListener {
             navigator().showSecondFragment()
         }
-        return bindind.root
+        return binding.root
     }
 
     companion object {
